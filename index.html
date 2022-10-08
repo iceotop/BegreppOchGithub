@@ -5,6 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Begrepp</title>
+
+    <style>
+
+        dt {
+
+            margin-left: 1.5em;
+
+        }
+
+        .svar {
+
+            margin: 1em 0em;
+
+        }
+
+    </style>
 </head>
 <body>
 
@@ -12,25 +28,50 @@
 
     <ol>
 
-        <li> Github flow - Vad är det? Hur använder man det? Vilka viktiga delar är inkluderade i begreppet?</li>
-        <p><u>Svar:</u><br>Gitflow är en fast arbetsrutin som man följer för att synka sina lokala filer med remote filer. Vi gör detta genom att sätta den utvalda datan vi har på våran dators minne i en “paket” som vi kan kalla för git. Paketet kan nu skickas, eller pushas, vidare till github, en remote repository (ett avlägset förvar).<br>
-            Sedan kan ytterligare steg tillsättas om projektet involverar flera personer än bara sig själv. Då ska man även synka mot en main branch genom att göra pull requests, vänta på att ens kamrater gett deras godkännande, merge:a ens branch med github-repot och pull:a den lokalt.<br>
-            Jag kan ge ett exempel med ett projekt där flera är involverade så går vi igenom alla stegen.<br>
-            Någon har gjort ett repo på github och bjudit in mig som collaborator. Jag accepterar. Personen har även gjort issues, av vilket minst en av dem har tilldelats mig. Jag klonar repot och skapar en lokal branch där jag gör min del av arbetet.<br>
-            Jag använder nu hela tiden den individuella gitflow:en. Jag lägger till ändringar och sparar dem i filen på datorn. När jag känner mig nöjd med en en ändring kan jag sätta det i git med git add eller stage:a ändringarna. När jag känner mig nöjd med en version av min uppgift kan jag göra git commit med ett meddelande så “tas en bild” av den versionen och ligger nu sparad i git-historiken/ som en “snapshot” jag kan nu hela tiden nu. kan jag sätta det i git med git add eller stage:a ändringarna. “Snapshot:en” kan nu pushas upp till repot på github med git push så att alla ser min branch.<br>
-            Jag kan nu begära en pull request, göra en uppdatering i issues-tråden medans jag väntar på feedback och eventuellt godkännande för att kunna gå vidare med en merge av min egna branch med den huvudsakliga/main branch:en dit allas färdiga arbetsinsatser lagts till.<br></p>
-        
-            <li> Flexbox - Vad är det? Hur fungerar det?</li>
-        <p></p>
-        
-        <li>DOM (Document Object Model) - Vad är det? Hur manipulerar man DOM?</li>
-        <p></p>
-        
-        <li>Fin kod - Vad menas med det begreppet? Varför är det viktigt?</li>
-        <p></p>
-        
-        <li>Ramverk - Inom webbutveckling använder man begreppet ramverk, vad är det? Beskriv vad det är och berätta lite mer om två valfria.</li>
-        <p></p>
+        <li><u>Github flow - Vad är det? Hur använder man det? Vilka viktiga delar är inkluderade i begreppet?</u></li>
+
+            <br><u>Svar:</u>
+                <div class="svar">
+                    <p>Gitflow är en fast arbetsrutin som man följer för att synka sina lokala filer med remote filer. Vi gör detta genom att sätta den utvalda datan vi har på våran dators minne i en “paket” som vi kan kalla för git. Paketet kan nu skickas, eller pushas, vidare till github, en remote repository (ett avlägset förvar).</p>
+                    <p>Sedan kan ytterligare steg tillsättas om projektet involverar flera personer än bara sig själv. Då ska man även synka mot en main branch genom att göra pull requests, vänta på att ens kamrater gett deras godkännande, merge:a ens branch med github-repot och pull:a den lokalt.</p>
+                    <p>Jag kan ge ett exempel med ett projekt där flera är involverade så går vi igenom alla stegen.</p>
+                    <p>Någon har gjort ett repo på github och bjudit in mig som collaborator. Jag accepterar. Personen har även gjort issues, av vilket minst en av dem har tilldelats mig. Jag <b>klonar repot</b> och skapar en lokal branch där jag gör min del av arbetet.</p>
+                    <p>Jag använder nu hela tiden den individuella gitflow:en. Jag lägger till ändringar och sparar dem i filen på datorn. När jag känner mig nöjd med en ändring kan jag sätta det i git med <b>git add</b> eller stage:a ändringarna. När jag känner mig nöjd med en version av min uppgift kan jag göra <b>git commit</b> så “tas en bild” av den versionen och ligger nu sparad i git-historiken som en “snapshot” jag nu hela tiden kan nå. “Snapshot:en” kan nu pushas upp till repot på github med <b>git push</b> så att alla ser min branch.</p>
+                    <p>Jag kan nu begära en <b>pull request</b> och samtidigt göra en uppdatering i issues-tråden medans jag väntar på feedback och eventuellt godkännande från kollaboratörer för att kunna gå vidare med en <b>merge</b> av min egna branch med den huvudsakliga/main branch:en dit allas "approved" arbetsinsatser läggs till.</p>
+                </div>
+
+        <li><u>Flexbox - Vad är det? Hur fungerar det?</u></li>
+
+            <br><u>Svar:</u>
+                <div class="svar">
+                    <p>Flexbox är en declaration man sätter på ett element genom .CSS. Det som då händer är att elementet nu ses som en flex-container. Detta betyder att dess direkta barn blir flex-items.</p>
+                    <p>Nu tillgängliggörs specifika flex-properties som man kan utnyttja. Det finns dem som man kan utnytta på SJÄLVA containern genom att sätta dem i elementet i .CSS dit man lagt "display: flex;". Dessa är flex-flow, flex-direction, flex-wrap, justify-content, align-items, och align-content. Sedan finns det dem flex-properties som man kan sätta på en flex-container:s flex-items i deras declaration block i .CSS såsom  flex-shrink, flex-grow, flex-basis, align-self, och order. Alla dessa properties bestämmer hur flex-items ligger i relation till varandra i flex-containern och var dem ligger på main-axis och cross-axis.</p>
+                </div>
+
+        <li><u>DOM (Document Object Model) - Vad är det? Hur manipulerar man DOM?</u></li>
+
+            <br><u>Svar:</u>
+                <div class="svar">
+                    <p>DOM är ett sätt att rekontextualisera HTML-dokument i ett trädliknande ramverk. Dess olika beståndsdelar omdefinieras. Element blir nu objekt. Objektets innehåll (attribut och textinnehåll) blir nodes och objektet själv är en node. Nodes kan vi nå och antingen ändra, ta bort, eller skapa och sätta in.</p>
+                    <p>Och hur gör man det? Man gör det med Javascript. Man skapar en .js-fil och refererar den i sin script-tagg i HTML-filen. I själva .js-filen kan jag nå alla nodes i DOM eller skapa dem med hjälp av olika metoder och properties som jag kallar på. Man kan även spara dem i variabler och få fram deras values.</p>
+                </div>
+
+        <li><u>Fin kod - Vad menas med det begreppet? Varför är det viktigt?</u></li>
+
+            <br><u>Svar:</u>
+                <div class="svar">
+                    <p> Fin kod betyder strukturerad, omtänksam, och hållbar kod. Man ska kunna komma tillbaks om några år och snabbt kunna komma in i vad allt det olika innehållet har för roll i källkoden. Sedan ska andra också kunna läsa och tyda koden.</p>
+                    <p>Det finns några saker som man kan göra för att förebygga oläsbar kod. Man kan använda sig av kommentarer för att både kommentera dem olika delarna men kan också utnyttja kommentarer i form av orienteringsundertitlar som man sätter ovanför olika avsnitt/indelningar. Class- och id-attributen kan vara till stor hjälp. Också namnet på en funktion eller variabel. Sist tänkar jag indrag av de olika elementen och spacing mellan stycken för att få ordning på dem.</p>
+                    <p>Några saker man kan undvika är att att förklara med kommentarer syftet hos variabler eller funktioner. Deras namn borde kunna stå för sig själva. Var också försiktig med programmeringsfackord (ex. datatyper) i namn; det kan vara vilseledande. Sist, när namn blir tydliga så kan de bli långa. Undvik därför onödiga ord som kanske ger grammatik men som inte informerar.</p>
+                </div>
+
+        <li><u>Ramverk - Inom webbutveckling använder man begreppet ramverk, vad är det? Beskriv vad det är och berätta lite mer om två valfria.</u></li>
+
+            <br><u>Svar:</u><br>
+                <div class="svar">
+                    <p> Ett ramverk är färdig, återanvändbar server-side kod som man kan importera och utnyttja i sitt eget projekt så att man slipper skriva all sin kod från scratch.</p>
+                    <p>Bootstrap är ett ramverk för front-end utveckling, alltså kan man dra nytta av den för att smidigt ge sin sida ett mer standariserat applikationsutseende. Det finns ett annat ramverk kallad Vue.js också. Då däremot Bootstrap har med app-liknande utseende att göra, kan Vue hjälpa till med app-liknande beteende. Det finns också Electron som är ett allmänt ramverk som uttnyttjar alla tre webbteknologier (HTML, CSS och Javascript) som sätts i bruk för att hjälpa till med funktionaliteten hos desktop-applikationer.</p>
+                </div>
 
     </ol>
 
@@ -38,16 +79,24 @@
 
     <dl>
 
-        <dt>1</dt>
-        <dd><a href="https://ju.instructure.com/courses/8865/pages/github-arbetsflode-vanligtvis-kallat-gitflow?module_item_id=222249">https://ju.instructure.com/courses/8865/pages/github-arbetsflode-vanligtvis-kallat-gitflow?module_item_id=222249</a></dd>
-        <dt>2</dt>
-        <dd>- white cold drink</dd>
-        <dt>3</dt>
-        <dd>- white cold drink</dd>
-        <dt>4</dt>
-        <dd>- white cold drink</dd>
-        <dt>5</dt>
-        <dd>- white cold drink</dd>
+        <dt><sup>1</sup></dt>
+            <dd><a href="https://ju.instructure.com/courses/8865/pages/github-arbetsflode-vanligtvis-kallat-gitflow?module_item_id=222249">https://ju.instructure.com/courses/8865/pages/github-arbetsflode-vanligtvis-kallat-gitflow?module_item_id=222249</a>, Github-repetition, Canvas.</dd><br>
+        
+        <dt><sup>2</sup></dt>
+            <dd><a href="https://www.youtube.com/watch?v=fYq5PXgSsbE">https://www.youtube.com/watch?v=fYq5PXgSsbE</a>, Flexbox in 15 minutes, Youtube.</dd><br>
+        
+        <dt><sup>3</sup></dt>
+            <dd><a href="https://www.youtube.com/watch?v=H63dVFDuJDM&t=153s">https://www.youtube.com/watch?v=H63dVFDuJDM&t=153s</a>, What is the DOM?, Net Ninja, Youtube.</dd><br>
+            <dd><a href="https://www.youtube.com/watch?v=SowaJlX1uKA&t=1s">https://www.youtube.com/watch?v=SowaJlX1uKA&t=1s</a>, Traversing the DOM, Net Ninja, Youtube.</dd><br>
+        
+        <dt><sup>4</sup></dt>
+            <dd><a href="https://ju.instructure.com/courses/8865/pages/viktigt-med-tydlig-och-lattlast-kod?module_item_id=202412">https://ju.instructure.com/courses/8865/pages/viktigt-med-tydlig-och-lattlast-kod?module_item_id=202412</a>, Tydlig och lättläst kod, Canvas.</dd><br>
+            <dd><a href="https://www.freecodecamp.org/news/clean-coding-for-beginners/">https://www.freecodecamp.org/news/clean-coding-for-beginners/</a>, Clean Code Explained, freecodecamp.org.</dd><br>
+        
+        <dt><sup>5</sup></dt>
+            <dd><a href="https://ju.instructure.com/courses/8865/pages/ramverk-och-kodbibliotek?module_item_id=222245">https://ju.instructure.com/courses/8865/pages/ramverk-och-kodbibliotek?module_item_id=222245</a>, Ramverk och kodbibliotek, Canvas.</dd><br>
+            <dd><a href="https://en.wikipedia.org/wiki/Vue.js">https://en.wikipedia.org/wiki/Vue.js</a>, Vue.js, Wikipedia.</dd><br>
+            <dd><a href="https://en.wikipedia.org/wiki/Electron_(software_framework)">https://en.wikipedia.org/wiki/Electron_(software_framework)</a>, Electron (software framework), Wikipedia.</dd><br>
 
     </dl>
 
